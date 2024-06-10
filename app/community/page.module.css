@@ -1,0 +1,115 @@
+.header {
+  gap: 3rem;
+  margin: 3rem auto 5rem auto;
+  width: 90%;
+  max-width: 75rem;
+  color: #ddd6cb;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #f9572a, #ff8a05);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  width: 90%;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #ddd6cb;
+}
+
+.perks {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.perks li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.perks li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.perks img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+}
+
+.perks p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ddd6cb;
+}
+
+@media (max-width: 992px) {
+  .header h1 {
+    font-size: 34px;
+  }
+
+  .header {
+    margin: 2.5rem auto;
+  }
+
+  .main h2 {
+    margin-bottom: 0;
+    font-size: 1.7rem;
+  }
+
+  .perks {
+    margin: 1.2rem 0;
+  }
+
+  .perks img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .perks p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header p {
+    font-size: 20px;
+  }
+
+  .main h2 {
+    font-size: 1.4rem;
+  }
+
+  .perks p {
+    font-size: 1rem;
+  }
+
+  .perks img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
